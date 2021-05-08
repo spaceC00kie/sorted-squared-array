@@ -5,12 +5,13 @@
 def sq_arr(arr):
     # iter over array
     for i, v in enumerate(arr):
-
         # mult by itself
-        arr[i]
+        arr[i] = v**2
     # sort mutated array
-    # return array
+    arr = sorted(arr)
+    arr.sort()
+    return arr
 
 
-sq_arr([-2, -1, 0, 2, 3])
+print(sq_arr([-2, -1, 0, 2, 3]))
 
