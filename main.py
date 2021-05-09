@@ -1,17 +1,11 @@
 
 
 # [-2, -1, 0, 2, 3]
+from solution1 import sq_arr
 
-def sq_arr(arr):
-    # iter over array
-    for i, v in enumerate(arr):
-        # mult by itself
-        arr[i] = v**2
-    # sort mutated array
-    arr = sorted(arr)
-    arr.sort()
-    return arr
+test_data = [-2, -1, 0, 2, 3]
+# print solution 1
+print(sq_arr1(test_data))
 
-
-print(sq_arr([-2, -1, 0, 2, 3]))
-
+# print solution 2
+print(sq_arr2(test_data))
